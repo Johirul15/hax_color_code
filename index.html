@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>color code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        Generate Color : <input type="color" id="colorpanel">
+        <input type="button" id="btn" value="Get color" onclick = "myColor()">
+        Result : <input type="text" id="box">
+    </div>
+    
+    
+    <script type="text/javascript">
+        function myColor(){
+            var color = document.getElementById('colorpanel').value;
+            document.body.style.backgroundColor = color;
+            document.getElementById('box').value = color;
+        }
+    </script>
+    
+</body>
+</html>
